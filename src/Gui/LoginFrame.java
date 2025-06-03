@@ -12,34 +12,60 @@ public class LoginFrame extends JFrame {
 
     public LoginFrame() {
         setTitle("Login");
-        setSize(300, 200);
+        setSize(350, 250);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        // Panel utama
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(3, 2));
+        panel.setLayout(new GridBagLayout());
+
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(8, 8, 8, 8);
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+
+        JLabel labelTitle = new JLabel("SILAKAN LOGIN");
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 2;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(labelTitle, gbc);
+
+        gbc.gridwidth = 1;
+        gbc.anchor = GridBagConstraints.WEST;
 
         JLabel usernameLabel = new JLabel("Username:");
-        usernameField = new JTextField();
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        panel.add(usernameLabel, gbc);
+
+        usernameField = new JTextField(15);
+        gbc.gridx = 1;
+        panel.add(usernameField, gbc);
 
         JLabel passwordLabel = new JLabel("Password:");
-        passwordField = new JPasswordField();
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        panel.add(passwordLabel, gbc);
+
+        passwordField = new JPasswordField(15);
+        gbc.gridx = 1;
+        panel.add(passwordField, gbc);
 
         JButton loginButton = new JButton("Login");
+        gbc.gridx = 0;
+        gbc.gridy = 3;
         loginButton.addActionListener(this::loginUser);
+        panel.add(loginButton, gbc);
 
         JButton registerButton = new JButton("Register");
+        gbc.gridx = 1;
         registerButton.addActionListener(e -> {
             new RegisterFrame().setVisible(true);
             this.dispose();
         });
+        panel.add(registerButton, gbc);
 
-        panel.add(usernameLabel);
-        panel.add(usernameField);
-        panel.add(passwordLabel);
-        panel.add(passwordField);
-        panel.add(loginButton);
-        panel.add(registerButton);
         add(panel);
     }
 
@@ -55,10 +81,14 @@ public class LoginFrame extends JFrame {
         boolean success = UserService.loginUser(username, password);
         if (success) {
             JOptionPane.showMessageDialog(this, "Login berhasil!");
-            new HomeFrame().setVisible(true); // Pastikan class HomeFrame sudah ada
+            new HomeFrame().setVisible(true);
             this.dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Username atau password salah.");
         }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new LoginFrame().setVisible(true));
     }
 }
