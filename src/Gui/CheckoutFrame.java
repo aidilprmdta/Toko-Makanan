@@ -22,6 +22,7 @@ public class CheckoutFrame extends JFrame {
         area.setEditable(false);
         StringBuilder detail = new StringBuilder();
 
+/*        Menampilkan daftar produk dan total harga dalam bentuk teks.*/
         for (Produk p : keranjang.getDaftarProduk()) {
             detail.append(p.getNama()).append(" - Rp ").append(p.getHarga()).append("\n");
         }
@@ -49,12 +50,6 @@ public class CheckoutFrame extends JFrame {
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this, "Masukkan jumlah uang yang valid!", "Error", JOptionPane.ERROR_MESSAGE);
             }
-        });
-
-        JButton checkoutButton = new JButton("Checkout");
-        checkoutButton.addActionListener(e -> {
-            CheckoutFrame checkoutFrame = new CheckoutFrame(keranjang); // keranjang yang sedang aktif
-            checkoutFrame.setVisible(true);
         });
 
         JPanel inputPanel = new JPanel(new GridLayout(3, 1, 5, 5));
