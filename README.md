@@ -14,7 +14,7 @@ Proyek ini adalah aplikasi kasir sederhana berbasis **Java** dengan antarmuka gr
 
 ## 📸 Tampilan Aplikasi
 
-![Tampilan Aplikasi](https://github.com/aidilprmdta/Toko-Makanan/blob/main/Screenshot.png?raw=true)
+![Tampilan Aplikasi](https://github.com/aidilprmdta/Toko-Makanan/blob/main/image.png?raw=true)
 
 > *Tampilan utama aplikasi kasir toko makanan dengan daftar menu dan kalkulasi otomatis.*
 
