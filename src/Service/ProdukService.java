@@ -44,8 +44,8 @@ public class ProdukService {
         daftarProduk.add(new Produk("P0032", "Sirup Jeruk ABC", 7000, "Minuman","src/Res/32.jpg"));
         daftarProduk.add(new Produk("P0033", "Mie Orak Arik", 15000, "Makanan","src/Res/33.jpg"));
         daftarProduk.add(new Produk("P0034", "Mie Ayam Bakso", 15000, "Makanan","src/Res/34.jpg"));
-        daftarProduk.add(new Produk("P0035", "Matcha Susu", 118000, "Makanan","src/Res/35.jpg"));
-        daftarProduk.add(new Produk("P0034", "Americano", 18000, "Makanan","src/Res/36.jpg"));
+        daftarProduk.add(new Produk("P0035", "Matcha Susu", 18000, "Minuman","src/Res/35.jpg"));
+        daftarProduk.add(new Produk("P0034", "Americano", 18000, "Minuman","src/Res/36.jpg"));
     }
 
     public List<Produk> getSemuaProduk() {
