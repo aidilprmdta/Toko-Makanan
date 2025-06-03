@@ -10,10 +10,6 @@ public class Keranjang {
         daftarProduk.add(produk);
     }
 
-    public void hapusProduk(Produk produk) {
-        daftarProduk.remove(produk);
-    }
-
     public List<Produk> getDaftarProduk() {
         return daftarProduk;
     }
