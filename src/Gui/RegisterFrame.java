@@ -13,51 +13,59 @@ public class RegisterFrame extends JFrame {
 
     public RegisterFrame() {
         setTitle("Register");
-        setSize(300, 200);
+        setSize(350, 230);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
 
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(3, 2));
+        JPanel panel = new JPanel(new GridBagLayout());
 
-        //Username
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(8, 8, 8, 8);
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+
+        JLabel labelTitle = new JLabel("REGISTER AKUN");
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 2;
+        gbc.anchor = GridBagConstraints.CENTER;
+        panel.add(labelTitle, gbc);
+
+        gbc.gridwidth = 1;
+        gbc.anchor = GridBagConstraints.WEST;
+
         JLabel usernameLabel = new JLabel("Username:");
-        usernameField = new JTextField();
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        panel.add(usernameLabel, gbc);
 
-        //Password
+        usernameField = new JTextField(15);
+        gbc.gridx = 1;
+        panel.add(usernameField, gbc);
+
         JLabel passwordLabel = new JLabel("Password:");
-        passwordField = new JPasswordField();
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        panel.add(passwordLabel, gbc);
 
-        //Register
+        passwordField = new JPasswordField(15);
+        gbc.gridx = 1;
+        panel.add(passwordField, gbc);
+
         JButton registerButton = new JButton("Register");
+        gbc.gridx = 0;
+        gbc.gridy = 3;
         registerButton.addActionListener(this::registerUser);
+        panel.add(registerButton, gbc);
 
-        //Kembali
-        JButton kembali = new JButton("Kembali");
-        kembali.addActionListener(e -> {
+        JButton kembaliButton = new JButton("Kembali");
+        gbc.gridx = 1;
+        kembaliButton.addActionListener(e -> {
             new LoginFrame().setVisible(true);
             this.dispose();
         });
-
-        //Panel
-        JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-        buttonPanel.add(registerButton);
-        buttonPanel.setBackground(Color.LIGHT_GRAY);
-
-        buttonPanel.add(kembali);
-        buttonPanel.add(registerButton);
-
-        panel.add(usernameLabel);
-        panel.add(usernameField);
-        panel.add(passwordLabel);
-        panel.add(passwordField);
-        panel.add(registerButton);
+        panel.add(kembaliButton, gbc);
 
         add(panel);
-        add(panel, BorderLayout.CENTER);
-        add(buttonPanel, BorderLayout.SOUTH);
         setVisible(true);
     }
 
