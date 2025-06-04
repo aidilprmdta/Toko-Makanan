@@ -32,7 +32,7 @@ public class TransaksiService {
             struk.append("- ").append(p.getNama()).append(" = Rp ").append(p.getHarga()).append("\n");
         }
 
-        struk.append("\nTotal Bayar     : Rp ").append(totalBayar).append("\n");
+        struk.append("\nTotal Bayar    : Rp ").append(totalBayar).append("\n");
 
         // Cetak struk ke console sebelum menampilkan dialog input
         System.out.println(struk.toString());
@@ -59,7 +59,7 @@ public class TransaksiService {
             } else {
                 int kembalian = uangDibayar - totalBayar;
                 String hasil = struk.toString() +
-                        "Uang Diterima : Rp " + uangDibayar + "\n" +
+                        "Uang Diterima  : Rp " + uangDibayar + "\n" +
                         "Kembalian      : Rp " + kembalian + "\n\n" +
                         "Terima kasih telah berbelanja!";
                 JOptionPane.showMessageDialog(null, hasil, "Struk Pembayaran", JOptionPane.INFORMATION_MESSAGE);
