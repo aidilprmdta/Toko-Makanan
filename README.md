@@ -55,7 +55,7 @@ Proyek ini adalah aplikasi kasir sederhana berbasis **Java** dengan antarmuka gr
 Proyek ini bersifat open-source dan bebas digunakan untuk pembelajaran. Tidak diizinkan digunakan untuk tujuan komersial tanpa izin.
 
 ---
-
 ## 📝 Note
 Fitur searchingnya ngebug
+---
 📌 Dibuat dengan ❤️ oleh [Aidil Pramadita Putra](https://github.com/aidilprmdta)
