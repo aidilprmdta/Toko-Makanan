@@ -56,4 +56,6 @@ Proyek ini bersifat open-source dan bebas digunakan untuk pembelajaran. Tidak di
 
 ---
 
+## 📝 Note
+Fitur searchingnya ngebug
 📌 Dibuat dengan ❤️ oleh [Aidil Pramadita Putra](https://github.com/aidilprmdta)
