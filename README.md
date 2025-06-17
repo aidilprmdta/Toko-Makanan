@@ -1,61 +1,61 @@
-# 🛒 Toko Makanan - Aplikasi Kasir Sederhana dengan Java Swing
+# 🛒 Food Store - Simple Cashier Application with Java Swing
 
-Proyek ini adalah aplikasi kasir sederhana berbasis **Java** dengan antarmuka grafis menggunakan **Java Swing**. Aplikasi ini dirancang untuk membantu pengelolaan transaksi penjualan makanan pada sebuah toko/kantin kecil. Dibangun menggunakan konsep **Object-Oriented Programming (OOP)**.
+This project is a simple cashier application based on **Java** with a graphical interface using **Java Swing**. This application is designed to help manage food sales transactions in a small shop/canteen. Built using the **Object-Oriented Programming (OOP)** concept.
 
-## 🚀 Fitur Utama
+## 🚀 Main Features
 
-* 👨‍🍳 Menampilkan daftar menu makanan dan minuman
-* ➕ Menambah item ke dalam keranjang belanja
-* 🧾 Menghitung total harga otomatis
-* 💵 Input uang pembayaran & hitung kembalian
-* 🗑️ Menghapus item dari keranjang
-* 🧹 Reset semua input dan keranjang
-* 🎨 Tampilan sederhana & user-friendly (GUI Java Swing)
+* 👨‍🍳 Display a list of food and beverage menus
+* ➕ Add items to the shopping cart
+* 🧾 Calculate the total price automatically
+* 💵 Input payment money & calculate change
+* 🗑️ Delete items from the cart
+* 🧹 Reset all inputs and cart
+* 🎨 Simple & user-friendly display (Java Swing GUI)
 
-## 📸 Tampilan Aplikasi
+## 📸 Application Display
 
-![Tampilan Aplikasi](https://github.com/aidilprmdta/Toko-Makanan/blob/main/image.png?raw=true)
+![Application Display](https://github.com/aidilprmdta/Toko-Makanan/blob/main/image.png?raw=true)
 
-> *Tampilan utama aplikasi kasir toko makanan dengan daftar menu dan kalkulasi otomatis.*
+> *Main display of the food shop cashier application with a menu list and automatic calculations.*
 
-## 🧱 Struktur Kode
+## 🧱 Code Structure
 
-* `Main.java` – Entry point aplikasi
-* `MenuItem.java` – Kelas representasi item makanan/minuman
-* `Cart.java` – Kelas logika keranjang belanja
-* `UI.java` – Kelas untuk membangun tampilan GUI (Swing)
-* `Utils.java` – Fungsi utilitas tambahan (opsional)
+* `Main.java` – Application entry point
+* `MenuItem.java` – Item representation class food/drink
+* `Cart.java` – Shopping cart logic class
+* `UI.java` – Class for building GUI (Swing) display
+* `Utils.java` – Additional utility functions (optional)
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
 * **Java 8+**
-* **Java Swing** untuk GUI
+* **Java Swing** for GUI
 * **OOP (Object-Oriented Programming)**
 
-## 🏗️ Cara Menjalankan
+## 🏗️ How to Run
 
-1. Clone repositori ini:
+1. Clone this repository:
 
-   ```bash
-   git clone https://github.com/aidilprmdta/Toko-Makanan.git
-   cd Toko-Makanan
-   ```
+```bash
+git clone https://github.com/aidilprmdta/Toko-Makanan.git
+cd Toko-Makanan
+```
 
-2. Buka project di IDE seperti **NetBeans**, **IntelliJ IDEA**, atau **Eclipse**.
+2. Open the project in an IDE such as **NetBeans**, **IntelliJ IDEA**, or **Eclipse**.
 
-3. Jalankan file `Main.java`.
+3. Run the `Main.java` file.
 
-## 💡 Catatan
+## 💡 Note
 
-* Pastikan Java sudah terinstal di komputermu.
-* Semua class sudah dipisahkan berdasarkan fungsi masing-masing agar mudah dipahami dan dikembangkan.
+* Make sure Java is installed on your computer.
+* All classes are separated based on their respective functions to make them easy to understand and develop.
 
-## 📜 Lisensi
+## 📜 License
 
-Proyek ini bersifat open-source dan bebas digunakan untuk pembelajaran. Tidak diizinkan digunakan untuk tujuan komersial tanpa izin.
+This project is open-source and free to use for learning. It is not allowed to be used for commercial purposes without permission.
 
 ---
 ## 📝 Note
-Fitur searchingnya ngebug
+The search feature is buggy
 ---
-📌 Dibuat dengan ❤️ oleh [Aidil Pramadita Putra](https://github.com/aidilprmdta)
+📌 Made with ❤️ by [Aidil Pramadita Putra](https://github.com/aidilprmdta)
