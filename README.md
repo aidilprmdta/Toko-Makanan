@@ -59,3 +59,5 @@ This project is open-source and free to use for learning. It is not allowed to b
 The search feature is buggy
 ---
 📌 Made with ❤️ by [Aidil Pramadita Putra](https://github.com/aidilprmdta)
+
+
